@@ -16,9 +16,20 @@ public class PlaсePage {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
+    @AndroidFindBy(xpath = ".//android.view.View[@content-desc='Back icon']")
+    private WebElement backArrow;
 
     @AndroidFindBy(xpath = ".//android.view.View[@content-desc='Marker coordinates icon']")
     private WebElement markerCoordinatesIcon;
+
+    public boolean isBackArrow() {
+        return backArrow.isDisplayed();
+    }
+
+    //Close route sheet
+    public void clickBackArrow() {
+        this.backArrow.click();
+    }
 
     //Is Marker coordinates icon displayed
     public boolean isMarkerCoordinatesIcon() {

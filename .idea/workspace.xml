@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="add pom">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/MainScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/PlaсePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/RouteBottomSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapsme/BaseTest.java" afterDir="false" />
+    <list default="true" id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="add po">
+      <change afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapsme/po/PlaсePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/PlaсePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapsme/po/SearchBottomSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/SearchBottomSheet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2CvQgipxiR5PdeUSes5WRgW2CBQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,6 +49,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+      <command value="mvn allure:serve" />
+      <command value="mvn all" />
+    </option>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659681342741</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add po">
+      <created>1659941795380</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659941795380</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +111,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="add .gitignore" />
     <MESSAGE value="add pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pom" />
+    <MESSAGE value="add po" />
+    <option name="LAST_COMMIT_MESSAGE" value="add po" />
   </component>
 </project>

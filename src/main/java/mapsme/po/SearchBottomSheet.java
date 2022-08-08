@@ -18,6 +18,7 @@ public class SearchBottomSheet {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
+
     //Search categories sheet header
     @AndroidFindBy(xpath = ".//android.view.View[@resource-id='search_categories_container']")
     private WebElement searchCategoriesConteiner;
