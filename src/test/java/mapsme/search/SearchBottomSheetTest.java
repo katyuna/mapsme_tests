@@ -1,5 +1,7 @@
 package mapsme.search;
 
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Issue;
 import io.qameta.allure.Step;
 import jdk.jfr.Description;
 import mapsme.BaseTest;
@@ -17,8 +19,10 @@ public class SearchBottomSheetTest extends BaseTest {
 
     @Test
     @Order(1)
+    @Issue("https://app.qase.io/project/MAPS?view=1&suite=161&case=1010")
     @DisplayName("Open and close Search bottom sheet")
     @Description("The search bottom sheet has been opened and closed by tap on [x]")
+    @Attachment(value = "Page screenshot", type = "image/png")
     public void testOpenAndCloseSearchBottomSheet() {
         waitSearchButton();
         clickSearchButton();

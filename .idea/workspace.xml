@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="add PlacePage po">
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" afterDir="false" />
+    <list default="true" id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="testOpenAndCloseSearchBottomSheet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapsme/po/PlaсePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/PlaсePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapsme/po/SearchBottomSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/SearchBottomSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,9 +50,9 @@
 }]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn allure:serve" />
       <command value="mvn all" />
       <command value="mvn clean test" />
+      <command value="mvn allure:serve" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.SearchBottomSheetTest">
@@ -140,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659951947186</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="testOpenAndCloseSearchBottomSheet">
+      <created>1659954852281</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659954852281</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +165,7 @@
     <MESSAGE value="add pom" />
     <MESSAGE value="add po" />
     <MESSAGE value="add PlacePage po" />
-    <option name="LAST_COMMIT_MESSAGE" value="add PlacePage po" />
+    <MESSAGE value="testOpenAndCloseSearchBottomSheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="testOpenAndCloseSearchBottomSheet" />
   </component>
 </project>

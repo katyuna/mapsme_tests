@@ -20,7 +20,7 @@ public class SearchTest extends BaseTest {
     PlaсePage plaсePage = new PlaсePage(driver);
 
     @Test
-    @Order(2)
+    @Order(1)
     @DisplayName("Search via search field in Search bottom sheet")
     @Description("The object has been found via search field in Search bottom sheet and search result is clickable")
     public void testSearchViaSearchFieldOnSearchBottomSheet() {
@@ -29,17 +29,6 @@ public class SearchTest extends BaseTest {
         setSearchString();
         assertSearchResults();
         clickSearchResult();
-    }
-
-    @Test
-    @Order(3)
-    @DisplayName("Clear search results")
-    @Description("The ")
-    public void testCancelSearchResults() {
-        waitSearchButton();
-        openSearchSheet();
-        setSearchString();
-        closeSearchBottomSheet();
     }
 
     @Step("Wait search button")
