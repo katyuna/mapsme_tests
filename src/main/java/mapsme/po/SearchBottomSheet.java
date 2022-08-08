@@ -1,11 +1,15 @@
 package mapsme.po;
 
 
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+
+import static io.appium.java_client.touch.offset.PointOption.point;
 
 public class SearchBottomSheet {
     private AndroidDriver driver;
@@ -38,6 +42,13 @@ public class SearchBottomSheet {
     //Category Icons
     @AndroidFindBy(xpath = "(.//android.view.View[@content-desc='category icon'])[1]")
     private WebElement categoryIcon1;
+
+    @AndroidFindBy(xpath = "(.//android.view.View[@content-desc='category icon'])[4]")
+    private WebElement categoryIcon2;
+
+    //Cancel
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View")
+    private WebElement cancelButton;
 
     //First search result
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.view.View[1]")
@@ -81,6 +92,11 @@ public class SearchBottomSheet {
     //Click search result
     public void clickSearchResult() {
         this.firstSearchResult.click();
+    }
+
+    //Click Cancel button
+    public void clickCancelButton() {
+        this.cancelButton.click();
     }
 
     //Close Search sheet by click [x]

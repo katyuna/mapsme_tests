@@ -29,6 +29,11 @@ public class SearchTest extends BaseTest {
         setSearchString();
         assertSearchResults();
         clickSearchResult();
+        closePlacePageFromSearchResults();
+        clickSearchField();
+        clearSearchFieldByPressX();
+        clickCancel();
+        closeSearchBottomSheet();
     }
 
     @Step("Wait search button")
@@ -38,11 +43,16 @@ public class SearchTest extends BaseTest {
         assertTrue(searchButtonIsDisplayed, "Error: route button doesn't displays");
     }
 
-    @Step("Click search button and open search sheet")
+    @Step("Click search button")
     public void openSearchSheet() {
         mainScreen.clickSearchButton();
         boolean searchSheetIsDisplayed = searchBottomSheet.isSearchIcon();
         assertTrue(searchSheetIsDisplayed);
+    }
+
+    @Step("Click search field")
+    public void clickSearchField() {
+        searchBottomSheet.clickSearchIcon();
     }
 
     @Step("Set search string")
@@ -65,16 +75,28 @@ public class SearchTest extends BaseTest {
         assertTrue(placePageIsDisplayed);
     }
 
+    @Step("Close place page by back arrow and assert back to the search results")
+    public void closePlacePageFromSearchResults() {
+        plaсePage.clickBackArrow();
+        assertTrue(searchBottomSheet.isSearchResult());
+    }
+
+    @Step("Clear search field by press [X]")
+    public void clearSearchFieldByPressX() {
+        searchBottomSheet.clickCloseButton();
+    }
+
+    @Step("Click Cancel and asser Search bottom sheet")
+    public void clickCancel() {
+        searchBottomSheet.clickCancelButton();
+        assertTrue(searchBottomSheet.isCategoryIcon());
+    }
+
     @Step("Close search sheet")
     public void closeSearchBottomSheet() {
         searchBottomSheet.clickCloseButton();
         boolean searchButtonIsDisplayed = mainScreen.isSearchButton();
-        assertTrue(searchButtonIsDisplayed, "Error: route button doesn't displays");
-    }
-
-    @Step("Close place page by back arrow")
-    public void closePlacePage() {
-        plaсePage.clickBackArrow();
+        assertTrue(searchButtonIsDisplayed);
     }
 
 }

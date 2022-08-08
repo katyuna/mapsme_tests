@@ -36,7 +36,7 @@ public class SearchBottomSheetTest extends BaseTest {
     public void waitSearchButton() {
         mainScreen.isSearchButton();
         boolean searchButtonIsDisplayed = mainScreen.isSearchButton();
-        assertTrue(searchButtonIsDisplayed, "Error: route button doesn't displays");
+        assertTrue(searchButtonIsDisplayed);
     }
 
     @Step("Click search button")
@@ -54,7 +54,7 @@ public class SearchBottomSheetTest extends BaseTest {
         assertTrue(searchBottomSheet.isCloseButton());
     }
 
-    @Step("Assert category nicon")
+    @Step("Assert category icon")
     public void assertCategoryIcon() {
         assertTrue(searchBottomSheet.isCategoryIcon());
     }

@@ -2,6 +2,8 @@ package mapsme;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import mapsme.po.MainScreen;
+import mapsme.po.SearchBottomSheet;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -50,4 +52,6 @@ public class BaseTest {
                 driver.findElement(By.xpath(".//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_button']")).click();
             }*/
     }
+
+
 }
