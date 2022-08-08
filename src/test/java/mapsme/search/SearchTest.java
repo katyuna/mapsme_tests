@@ -20,16 +20,6 @@ public class SearchTest extends BaseTest {
     PlaсePage plaсePage = new PlaсePage(driver);
 
     @Test
-    @Order(1)
-    @DisplayName("Open and close Search bottom sheet")
-    @Description("The search bottom sheet has been opened and closed by tap on [x]")
-    public void testOpenAndCloseSearchBottomSheet() {
-        waitSearchButton();
-        openSearchSheet();
-        closeSearchBottomSheet();
-    }
-
-    @Test
     @Order(2)
     @DisplayName("Search via search field in Search bottom sheet")
     @Description("The object has been found via search field in Search bottom sheet and search result is clickable")
@@ -39,21 +29,18 @@ public class SearchTest extends BaseTest {
         setSearchString();
         assertSearchResults();
         clickSearchResult();
-
-        // closeSearchSheet();
     }
 
     @Test
     @Order(3)
-    @DisplayName("Cancel search results")
+    @DisplayName("Clear search results")
     @Description("The ")
-    public void testCancelSearchResults(){
-
+    public void testCancelSearchResults() {
+        waitSearchButton();
+        openSearchSheet();
+        setSearchString();
+        closeSearchBottomSheet();
     }
-
-
-
-
 
     @Step("Wait search button")
     public void waitSearchButton() {
@@ -83,9 +70,10 @@ public class SearchTest extends BaseTest {
     }
 
     @Step("Click search result and assert place page opened")
-    public void clickSearchResult(){
+    public void clickSearchResult() {
         searchBottomSheet.clickSearchResult();
         boolean placePageIsDisplayed = plaсePage.isMarkerCoordinatesIcon();
+        assertTrue(placePageIsDisplayed);
     }
 
     @Step("Close search sheet")
@@ -94,5 +82,11 @@ public class SearchTest extends BaseTest {
         boolean searchButtonIsDisplayed = mainScreen.isSearchButton();
         assertTrue(searchButtonIsDisplayed, "Error: route button doesn't displays");
     }
+
+    @Step("Close place page by back arrow")
+    public void closePlacePage() {
+        plaсePage.clickBackArrow();
+    }
+
 }
 

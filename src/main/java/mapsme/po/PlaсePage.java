@@ -26,7 +26,7 @@ public class PlaсePage {
         return backArrow.isDisplayed();
     }
 
-    //Close route sheet
+    //Close place page
     public void clickBackArrow() {
         this.backArrow.click();
     }

@@ -29,11 +29,15 @@ public class SearchBottomSheet {
     //[Х]
     //@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.widget.Button")
     @AndroidFindBy(xpath = ".//android.view.View[@content-desc='closeButton']")
-    private WebElement closeSearchCategoriesSheetButton;
+    private WebElement closeButton;
 
     //Search field
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.widget.EditText")
     private WebElement searchField;
+
+    //Category Icons
+    @AndroidFindBy(xpath = "(.//android.view.View[@content-desc='category icon'])[1]")
+    private WebElement categoryIcon1;
 
     //First search result
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.view.View[1]")
@@ -47,6 +51,16 @@ public class SearchBottomSheet {
     //Is Search Icon displayed
     public boolean isSearchIcon() {
         return searchIcon.isDisplayed();
+    }
+
+    //Is close button
+    public boolean isCloseButton() {
+        return closeButton.isDisplayed();
+    }
+
+    //Is category icon 1
+    public boolean isCategoryIcon() {
+        return categoryIcon1.isDisplayed();
     }
 
     //Is Search results displayed
@@ -69,8 +83,8 @@ public class SearchBottomSheet {
         this.firstSearchResult.click();
     }
 
-    //Close Search categories sheet by click [x]
+    //Close Search sheet by click [x]
     public void clickCloseButton() {
-        this.closeSearchCategoriesSheetButton.click();
+        this.closeButton.click();
     }
 }
