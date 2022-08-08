@@ -1,5 +1,6 @@
 package mapsme.search;
 
+import io.qameta.allure.Issue;
 import mapsme.BaseTest;
 
 import io.qameta.allure.Step;
@@ -21,6 +22,7 @@ public class SearchTest extends BaseTest {
 
     @Test
     @Order(1)
+    @Issue("1014, 1034, 1035")
     @DisplayName("Search via search field in Search bottom sheet")
     @Description("The object has been found via search field in Search bottom sheet and search result is clickable")
     public void testSearchViaSearchFieldOnSearchBottomSheet() {
@@ -40,7 +42,7 @@ public class SearchTest extends BaseTest {
     public void waitSearchButton() {
         mainScreen.isSearchButton();
         boolean searchButtonIsDisplayed = mainScreen.isSearchButton();
-        assertTrue(searchButtonIsDisplayed, "Error: route button doesn't displays");
+        assertTrue(searchButtonIsDisplayed);
     }
 
     @Step("Click search button")

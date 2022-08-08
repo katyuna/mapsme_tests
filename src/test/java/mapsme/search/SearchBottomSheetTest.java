@@ -19,9 +19,10 @@ public class SearchBottomSheetTest extends BaseTest {
 
     @Test
     @Order(1)
-    @Issue("https://app.qase.io/project/MAPS?view=1&suite=161&case=1010")
-    @DisplayName("Open and close Search bottom sheet")
-    @Description("The search bottom sheet has been opened and closed by tap on [x]")
+    @Issue("1010")
+    @DisplayName("Open and assert Search bottom sheet")
+    @Description("The search bottom sheet has been opened and closed by tap on [x]."+
+            " Search bottom sheet contains search field, close button and at least one category botton")
     @Attachment(value = "Page screenshot", type = "image/png")
     public void testOpenAndCloseSearchBottomSheet() {
         waitSearchButton();
