@@ -51,6 +51,8 @@ public class BaseTest {
             if (driver.findElement(By.xpath(".//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_button']")).isDisplayed()){
                 driver.findElement(By.xpath(".//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_button']")).click();
             }*/
+
+
     }
 
 

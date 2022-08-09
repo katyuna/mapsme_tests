@@ -5,6 +5,7 @@ import io.qameta.allure.Issue;
 import io.qameta.allure.Step;
 import jdk.jfr.Description;
 import mapsme.BaseTest;
+import mapsme.Steps;
 import mapsme.po.MainScreen;
 import mapsme.po.SearchBottomSheet;
 import org.junit.jupiter.api.DisplayName;
@@ -14,26 +15,27 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SearchBottomSheetTest extends BaseTest {
-    MainScreen mainScreen = new MainScreen(driver);
-    SearchBottomSheet searchBottomSheet = new SearchBottomSheet(driver);
+    // MainScreen mainScreen = new MainScreen(driver);
+    // SearchBottomSheet searchBottomSheet = new SearchBottomSheet(driver);
 
     @Test
     @Order(1)
     @Issue("1010")
     @DisplayName("Open and assert Search bottom sheet")
-    @Description("The search bottom sheet has been opened and closed by tap on [x]."+
-            " Search bottom sheet contains search field, close button and at least one category botton")
-    @Attachment(value = "Page screenshot", type = "image/png")
+    @Description(
+            "The search bottom sheet has been opened and closed by tap on [x]." +
+            " Search bottom sheet contains search field, close button and at least one category buttons")
+
     public void testOpenAndCloseSearchBottomSheet() {
-        waitSearchButton();
-        clickSearchButton();
-        assertSearchIcon();
-        assertCloseButton();
-        assertCategoryIcon();
-        closeSearchButton();
+        Steps.waitSearchButton();
+        Steps.clickSearchButton();
+        Steps.assertSearchIcon();
+        Steps.assertCloseButton();
+        Steps.assertCategoryIcon();
+        Steps.closeSearchBottomSheetByX();
     }
 
-    @Step("Wait search button")
+/*    @Step("Wait search button")
     public void waitSearchButton() {
         mainScreen.isSearchButton();
         boolean searchButtonIsDisplayed = mainScreen.isSearchButton();
@@ -63,5 +65,5 @@ public class SearchBottomSheetTest extends BaseTest {
     @Step("Close search button")
     public void closeSearchButton() {
         searchBottomSheet.clickCloseButton();
-    }
+    }*/
 }
