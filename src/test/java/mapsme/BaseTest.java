@@ -3,6 +3,7 @@ package mapsme;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import mapsme.po.MainScreen;
+import mapsme.po.PlaсePage;
 import mapsme.po.SearchBottomSheet;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -16,6 +17,10 @@ public class BaseTest {
     protected static URL url;
     protected static DesiredCapabilities capabilities;
     protected static AndroidDriver driver;
+
+    protected static MainScreen mainScreen;
+    static SearchBottomSheet searchBottomSheet;
+    protected static PlaсePage plaсePage;
 
     @BeforeAll
     static void init() throws MalformedURLException {
@@ -44,6 +49,11 @@ public class BaseTest {
         driver = new AndroidDriver(url, capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
+        mainScreen = new MainScreen(driver);
+        searchBottomSheet = new SearchBottomSheet(driver);
+        plaсePage = new PlaсePage(driver);
+
+
             /*driver.resetApp();
             if(driver.findElement(By.xpath(".//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_foreground_only_button']")).isDisplayed()){
                 driver.findElement(By.xpath(".//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_foreground_only_button']")).click();
@@ -51,7 +61,6 @@ public class BaseTest {
             if (driver.findElement(By.xpath(".//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_button']")).isDisplayed()){
                 driver.findElement(By.xpath(".//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_button']")).click();
             }*/
-
 
     }
 

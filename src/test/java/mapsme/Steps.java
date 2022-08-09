@@ -4,15 +4,12 @@ import io.qameta.allure.Step;
 import mapsme.po.MainScreen;
 import mapsme.po.PlaсePage;
 import mapsme.po.SearchBottomSheet;
+import org.junit.jupiter.api.BeforeAll;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Steps extends BaseTest {
-    //Create screens objects
-    static MainScreen mainScreen = new MainScreen(driver);
-    static SearchBottomSheet searchBottomSheet = new SearchBottomSheet(driver);
 
-    static PlaсePage plaсePage = new PlaсePage(driver);
+public class Steps extends BaseTest {
 
     //Main Screen
     @Step("Wait search button")
