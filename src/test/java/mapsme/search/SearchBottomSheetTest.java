@@ -1,18 +1,10 @@
 package mapsme.search;
 
-import io.qameta.allure.Attachment;
 import io.qameta.allure.Issue;
-import io.qameta.allure.Step;
 import jdk.jfr.Description;
-import mapsme.BaseTest;
-import mapsme.Steps;
-import mapsme.po.MainScreen;
-import mapsme.po.SearchBottomSheet;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SearchBottomSheetTest extends BaseTest {
     // MainScreen mainScreen = new MainScreen(driver);
@@ -34,36 +26,4 @@ public class SearchBottomSheetTest extends BaseTest {
         Steps.assertCategoryIcon();
         Steps.closeSearchBottomSheetByX();
     }
-
-/*    @Step("Wait search button")
-    public void waitSearchButton() {
-        mainScreen.isSearchButton();
-        boolean searchButtonIsDisplayed = mainScreen.isSearchButton();
-        assertTrue(searchButtonIsDisplayed);
-    }
-
-    @Step("Click search button")
-    public void clickSearchButton() {
-        mainScreen.clickSearchButton();
-    }
-
-    @Step("Assert search icon")
-    public void assertSearchIcon() {
-        assertTrue(searchBottomSheet.isSearchIcon());
-    }
-
-    @Step("Assert close button")
-    public void assertCloseButton() {
-        assertTrue(searchBottomSheet.isCloseButton());
-    }
-
-    @Step("Assert category icon")
-    public void assertCategoryIcon() {
-        assertTrue(searchBottomSheet.isCategoryIcon());
-    }
-
-    @Step("Close search button")
-    public void closeSearchButton() {
-        searchBottomSheet.clickCloseButton();
-    }*/
 }

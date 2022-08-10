@@ -6,13 +6,13 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-public class PlaсePage {
+public class PlacePage {
     private AndroidDriver driver;
 
-    public PlaсePage() {
+    public PlacePage() {
     }
 
-    public PlaсePage(AndroidDriver driver) {
+    public PlacePage(AndroidDriver driver) {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }

@@ -1,10 +1,6 @@
-package mapsme;
+package mapsme.search;
 
 import io.qameta.allure.Step;
-import mapsme.po.MainScreen;
-import mapsme.po.PlaсePage;
-import mapsme.po.SearchBottomSheet;
-import org.junit.jupiter.api.BeforeAll;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -63,13 +59,13 @@ public class Steps extends BaseTest {
     @Step("Click search result and assert place page opened")
     public static void clickSearchResult() {
         searchBottomSheet.clickSearchResult();
-        boolean placePageIsDisplayed = plaсePage.isMarkerCoordinatesIcon();
+        boolean placePageIsDisplayed = placePage.isMarkerCoordinatesIcon();
         assertTrue(placePageIsDisplayed);
     }
 
     @Step("Close place page by back arrow and assert back to the search results")
     public static void closePlacePageFromSearchResults() {
-        plaсePage.clickBackArrow();
+        placePage.clickBackArrow();
         assertTrue(searchBottomSheet.isSearchResult());
     }
 

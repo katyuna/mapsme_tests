@@ -1,19 +1,10 @@
 package mapsme.search;
 
 import io.qameta.allure.Issue;
-import mapsme.BaseTest;
-
-import io.qameta.allure.Step;
 import jdk.jfr.Description;
-import mapsme.Steps;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-import mapsme.po.MainScreen;
-import mapsme.po.PlaсePage;
-import mapsme.po.SearchBottomSheet;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SearchTest extends BaseTest {
     @Test

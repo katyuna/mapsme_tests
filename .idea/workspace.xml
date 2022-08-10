@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="add Steps class">
+    <list default="true" id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="move po creation to the Base Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapsme/po/PlaсePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/PlacePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +54,8 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn all" />
-      <command value="mvn allure:serve" />
       <command value="mvn clean test" />
+      <command value="mvn allure:serve" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.SearchTest.testSearchViaSearchFieldOnSearchBottomSheet">
@@ -189,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660030467310</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="move po creation to the Base Test">
+      <created>1660031726611</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660031726611</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +224,7 @@
     <MESSAGE value="SarchFlowTest" />
     <MESSAGE value="SarchFlowTest with description" />
     <MESSAGE value="add Steps class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Steps class" />
+    <MESSAGE value="move po creation to the Base Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="move po creation to the Base Test" />
   </component>
 </project>
