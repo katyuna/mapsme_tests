@@ -49,11 +49,27 @@ public class Steps extends BaseTest {
         //assert что заполнилось
     }
 
+    @Step("Get search text")
+    public static String getSearchFieldText() {
+        String searchFieldText = searchBottomSheet.searchFieldGetText();
+        return searchFieldText;
+    }
+
+
+
+
     @Step("Wait search results")
     public static void waitSearchResults() {
         searchBottomSheet.isSearchResult();
         boolean searchResultIsDisplayed = searchBottomSheet.isSearchResult();
         assertTrue(searchResultIsDisplayed);
+    }
+
+    @Step("Wait search history")
+    public static void waitSearchHistory() {
+        searchBottomSheet.isSearchHistory();
+        boolean searchHistoryIsDisplayed = searchBottomSheet.isSearchHistory();
+        assertTrue(searchHistoryIsDisplayed);
     }
 
     @Step("Click search result and assert place page opened")

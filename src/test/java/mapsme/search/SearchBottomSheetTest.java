@@ -15,7 +15,7 @@ public class SearchBottomSheetTest extends BaseTest {
             "The search bottom sheet has been opened and closed by tap on [x]." +
             " Search bottom sheet contains search field, close button and at least one category buttons")
 
-    public void testOpenAndCloseSearchBottomSheet() {
+    public void testSearchBottomSheet() {
         Steps.waitSearchButton();
         Steps.clickSearchButton();
         Steps.assertSearchIcon();

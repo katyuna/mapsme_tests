@@ -1,12 +1,18 @@
 package mapsme.search;
 
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Issue;
 import jdk.jfr.Description;
+import org.junit.After;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
-public class SearchTest extends BaseTest {
+import static org.openqa.selenium.logging.LogType.DRIVER;
+
+public class SearchFieldTest extends BaseTest {
     @Test
     @Order(1)
     @Issue("1014, 1034, 1035")
@@ -15,7 +21,7 @@ public class SearchTest extends BaseTest {
             "Search result is clickable." +
             "Search results can be clear. " +
             "Search results can be cancel.")
-    public void testSearchViaSearchFieldOnSearchBottomSheet() {
+    public void testSearchViaSearchField() {
         Steps.waitSearchButton();
         Steps.clickSearchButton();
         Steps.clickSearchField();

@@ -1,11 +1,9 @@
 package mapsme.po;
 
 
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
@@ -54,6 +52,10 @@ public class SearchBottomSheet {
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.view.View[1]")
     private WebElement firstSearchResult;
 
+    //First search history
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.view.View[1]/android.view.View[2]")
+    private WebElement firstSearchHistory;
+
     //Is Search categories sheet header displayed
     public boolean isSearchCategoriesConteiner() {
         return searchCategoriesConteiner.isDisplayed();
@@ -79,6 +81,11 @@ public class SearchBottomSheet {
         return firstSearchResult.isDisplayed();
     }
 
+    //Is Search history displayed
+    public boolean isSearchHistory() {
+        return firstSearchHistory.isDisplayed();
+    }
+
     //Click search icon
     public void clickSearchIcon() {
         this.searchIcon.click();
@@ -102,5 +109,17 @@ public class SearchBottomSheet {
     //Close Search sheet by click [x]
     public void clickCloseButton() {
         this.closeButton.click();
+    }
+
+    //Get text for search history result
+    public String searchHistoryGetText(){
+        String searchHistoryText = firstSearchHistory.getAttribute("text");
+        return searchHistoryText;
+    }
+
+    //Get search field text
+    public String searchFieldGetText(){
+        String searchFieldText = searchField.getAttribute("text");
+        return searchFieldText;
     }
 }

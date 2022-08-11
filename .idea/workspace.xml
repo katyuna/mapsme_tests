@@ -4,22 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="add static initialization block in BaseTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchHistory.java" afterDir="false" />
+    <list default="true" id="10348fce-d847-4f5e-b052-934198523ff8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapsme/po/SearchBottomSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/SearchBottomSheet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchHistoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchFieldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/Steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,33 +29,32 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="workOffline" value="true" />
+        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2CvQgipxiR5PdeUSes5WRgW2CBQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2DCfTBLhRJUlwXKnShZPHzo8iEg" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn all" />
-      <command value="mvn clean test" />
+      <command value="mvn clean" />
       <command value="mvn allure:serve" />
+      <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchHistory">
-    <configuration name="SearchBottomSheetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SearchHistoryTest.testSearchHistory">
+    <configuration name="SearchHistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mapsme_tests" />
       <extension name="coverage">
         <pattern>
@@ -65,13 +63,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapsme.search" />
-      <option name="MAIN_CLASS_NAME" value="mapsme.search.SearchBottomSheetTest" />
+      <option name="MAIN_CLASS_NAME" value="mapsme.search.SearchHistoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchHistory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchHistoryTest.testSearchHistory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mapsme_tests" />
       <extension name="coverage">
         <pattern>
@@ -80,38 +78,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapsme.search" />
-      <option name="MAIN_CLASS_NAME" value="mapsme.search.SearchHistory" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mapsme_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mapsme.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mapsme.search" />
-      <option name="MAIN_CLASS_NAME" value="mapsme.search.SearchTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchTest.testSearchViaSearchFieldOnSearchBottomSheet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mapsme_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mapsme.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mapsme.search" />
-      <option name="MAIN_CLASS_NAME" value="mapsme.search.SearchTest" />
-      <option name="METHOD_NAME" value="testSearchViaSearchFieldOnSearchBottomSheet" />
+      <option name="MAIN_CLASS_NAME" value="mapsme.search.SearchHistoryTest" />
+      <option name="METHOD_NAME" value="testSearchHistory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,107 +87,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchHistory" />
-        <item itemvalue="JUnit.SearchTest.testSearchViaSearchFieldOnSearchBottomSheet" />
-        <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.SearchBottomSheetTest" />
+        <item itemvalue="JUnit.SearchHistoryTest.testSearchHistory" />
+        <item itemvalue="JUnit.SearchHistoryTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="" />
-      <created>1659680693576</created>
+      <changelist id="10348fce-d847-4f5e-b052-934198523ff8" name="Changes" comment="" />
+      <created>1660207995013</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1659680693576</updated>
+      <updated>1660207995013</updated>
     </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1659680736109</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1659680736109</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add .gitignore">
-      <created>1659681066851</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1659681066851</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add pom">
-      <created>1659681342740</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1659681342741</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add po">
-      <created>1659941795380</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1659941795380</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add PlacePage po">
-      <created>1659951947186</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1659951947186</updated>
-    </task>
-    <task id="LOCAL-00006" summary="testOpenAndCloseSearchBottomSheet">
-      <created>1659954852281</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1659954852281</updated>
-    </task>
-    <task id="LOCAL-00007" summary="SearchBottomSheetTest">
-      <created>1659955592129</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1659955592129</updated>
-    </task>
-    <task id="LOCAL-00008" summary="SarchFlowTest">
-      <created>1659961780495</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1659961780495</updated>
-    </task>
-    <task id="LOCAL-00009" summary="SarchFlowTest with description">
-      <created>1659962156799</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1659962156799</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add Steps class">
-      <created>1660030467310</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1660030467310</updated>
-    </task>
-    <task id="LOCAL-00011" summary="move po creation to the Base Test">
-      <created>1660031726611</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1660031726611</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add static initialization block in BaseTest">
-      <created>1660106896033</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1660106896033</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,20 +113,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
-    <MESSAGE value="add .gitignore" />
-    <MESSAGE value="add pom" />
-    <MESSAGE value="add po" />
-    <MESSAGE value="add PlacePage po" />
-    <MESSAGE value="testOpenAndCloseSearchBottomSheet" />
-    <MESSAGE value="SearchBottomSheetTest" />
-    <MESSAGE value="SarchFlowTest" />
-    <MESSAGE value="SarchFlowTest with description" />
-    <MESSAGE value="add Steps class" />
-    <MESSAGE value="move po creation to the Base Test" />
-    <MESSAGE value="add static initialization block in BaseTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="add static initialization block in BaseTest" />
   </component>
 </project>
