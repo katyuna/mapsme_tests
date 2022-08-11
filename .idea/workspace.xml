@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="move po creation to the Base Test">
+    <list default="true" id="ff7016b6-aaa2-4bdb-8a78-d863a3f9c07d" name="Changes" comment="add static initialization block in BaseTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapsme/po/PlaсePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/PlacePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/Steps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,7 @@
       <command value="mvn allure:serve" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest.testSearchViaSearchFieldOnSearchBottomSheet">
+  <component name="RunManager" selected="JUnit.SearchHistory">
     <configuration name="SearchBottomSheetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mapsme_tests" />
       <extension name="coverage">
@@ -69,6 +66,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="mapsme.search" />
       <option name="MAIN_CLASS_NAME" value="mapsme.search.SearchBottomSheetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchHistory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mapsme_tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapsme.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mapsme.search" />
+      <option name="MAIN_CLASS_NAME" value="mapsme.search.SearchHistory" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,6 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SearchHistory" />
         <item itemvalue="JUnit.SearchTest.testSearchViaSearchFieldOnSearchBottomSheet" />
         <item itemvalue="JUnit.SearchTest" />
         <item itemvalue="JUnit.SearchBottomSheetTest" />
@@ -199,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660031726611</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add static initialization block in BaseTest">
+      <created>1660106896033</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660106896033</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +245,7 @@
     <MESSAGE value="SarchFlowTest with description" />
     <MESSAGE value="add Steps class" />
     <MESSAGE value="move po creation to the Base Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="move po creation to the Base Test" />
+    <MESSAGE value="add static initialization block in BaseTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add static initialization block in BaseTest" />
   </component>
 </project>

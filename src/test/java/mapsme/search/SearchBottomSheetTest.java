@@ -7,9 +7,6 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 public class SearchBottomSheetTest extends BaseTest {
-    // MainScreen mainScreen = new MainScreen(driver);
-    // SearchBottomSheet searchBottomSheet = new SearchBottomSheet(driver);
-
     @Test
     @Order(1)
     @Issue("1010")
