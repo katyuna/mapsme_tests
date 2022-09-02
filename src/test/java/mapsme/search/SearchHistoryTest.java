@@ -18,17 +18,23 @@ public class SearchHistoryTest extends BaseTest {
         Steps.clickSearchButton();
         Steps.clickSearchField();
         Steps.setSearchString();
-        String expected = Steps.getSearchFieldText();
-        Steps.waitSearchResults();
+
+        while(Steps.assertNoResults() == true){
+            Steps.clearSearchFieldByPressX();
+            Steps.setSearchString();
+        }
+
+        String expected = Steps.getFirstSearchResultName();
         Steps.clickSearchResult();
         Steps.closePlacePageFromSearchResults();
+        Steps.clearSearchFieldByPressX();
         Steps.clickSearchCancel();
-        Steps.closeSearchBottomSheetByX();
         Steps.clickSearchButton();
         Steps.clickSearchField();
         Steps.waitSearchHistory();
 
         String actual = searchBottomSheet.searchHistoryGetText();
+
 
         System.out.println("1" + expected);
         System.out.println("2" + actual);

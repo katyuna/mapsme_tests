@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10348fce-d847-4f5e-b052-934198523ff8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="10348fce-d847-4f5e-b052-934198523ff8" name="Changes" comment="add SearchHistoryTest without assertions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mapsme/po/SearchBottomSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapsme/po/SearchBottomSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchBottomSheetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchHistoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchFieldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchHistoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/SearchHistoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mapsme/search/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapsme/search/Steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +48,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchHistoryTest.testSearchHistory">
+  <component name="RunManager" selected="JUnit.SearchHistoryTest">
     <configuration name="SearchHistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mapsme_tests" />
       <extension name="coverage">
@@ -101,6 +96,14 @@
       <option name="presentableId" value="Default" />
       <updated>1660207995013</updated>
     </task>
+    <task id="LOCAL-00001" summary="add SearchHistoryTest without assertions">
+      <created>1660215358403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660215358403</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,5 +116,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add SearchHistoryTest without assertions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add SearchHistoryTest without assertions" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mapsme/po/SearchBottomSheet.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

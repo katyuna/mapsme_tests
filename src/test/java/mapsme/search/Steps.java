@@ -2,6 +2,7 @@ package mapsme.search;
 
 import io.qameta.allure.Step;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
@@ -45,7 +46,8 @@ public class Steps extends BaseTest {
 
     @Step("Set search string")
     public static void setSearchString() {
-        searchBottomSheet.setSearch("McDonalds");
+        String search = searchBottomSheet.generateCityName();
+        searchBottomSheet.setSearch(search);
         //assert что заполнилось
     }
 
@@ -55,14 +57,23 @@ public class Steps extends BaseTest {
         return searchFieldText;
     }
 
-
-
-
     @Step("Wait search results")
-    public static void waitSearchResults() {
+    public static boolean waitSearchResults() {
         searchBottomSheet.isSearchResult();
         boolean searchResultIsDisplayed = searchBottomSheet.isSearchResult();
         assertTrue(searchResultIsDisplayed);
+        return searchResultIsDisplayed;
+    }
+    /*
+    public boolean isSearchResult() {
+        return firstSearchResult.isDisplayed();
+    }
+     */
+
+    @Step("Get first search result name")
+    public static String getFirstSearchResultName() {
+        String firstSearchResultName = searchBottomSheet.firstSearchResultNameGetText();
+        return firstSearchResultName;
     }
 
     @Step("Wait search history")
@@ -101,5 +112,15 @@ public class Steps extends BaseTest {
     public static void closeSearchBottomSheetByX() {
         searchBottomSheet.clickCloseButton();
         assertTrue(mainScreen.isSearchButton());
+    }
+
+    @Step("Assert no results")
+    public static boolean assertNoResults() {
+        String expected = searchBottomSheet.noResultsGetText();
+        String actual = searchBottomSheet.noResultString ();
+        if (expected.equals(actual)){
+            return true;
+        }
+        return false;
     }
 }

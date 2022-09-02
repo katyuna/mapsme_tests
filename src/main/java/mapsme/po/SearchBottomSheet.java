@@ -1,6 +1,7 @@
 package mapsme.po;
 
 
+import com.github.javafaker.Faker;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -52,9 +53,17 @@ public class SearchBottomSheet {
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.view.View[1]")
     private WebElement firstSearchResult;
 
+    //First search result name
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.view.View[1]/android.view.View[2]")
+    private WebElement firstSearchResultName;
+
     //First search history
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.view.View[1]/android.view.View[2]")
     private WebElement firstSearchHistory;
+
+    //"Unfortunately we didn't find anything" text
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]")
+    private WebElement noResultsText;
 
     //Is Search categories sheet header displayed
     public boolean isSearchCategoriesConteiner() {
@@ -121,5 +130,29 @@ public class SearchBottomSheet {
     public String searchFieldGetText(){
         String searchFieldText = searchField.getAttribute("text");
         return searchFieldText;
+    }
+
+    //Get first search result name
+    public String firstSearchResultNameGetText(){
+        String firstSearchFieldName = firstSearchResultName.getAttribute("text");
+        return firstSearchFieldName;
+    }
+
+    //Get no results text
+    public String noResultsGetText(){
+        String noResultText = noResultsText.getAttribute("text");
+        return noResultText;
+    }
+
+    public String noResultString (){
+        return "Unfortunately we didn't find anything";
+    }
+
+
+    //Generate test data
+        public String generateCityName (){
+            Faker faker = new Faker();
+            String cityName = faker.address().cityName();
+            return cityName;
     }
 }
